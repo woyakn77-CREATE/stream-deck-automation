@@ -1,6 +1,6 @@
 # One-Button Desk: Stream Deck Automation System
 
-**Live:** https://woyakn77-create.github.io/stream-deck-automation/ · [Back to portfolio](https://woyakn77-create.github.io/portfolio/)
+**Live:** https://woyakn77-create.github.io/stream-deck-automation/ · [Back to portfolio](https://woyakn77-create.github.io/Portfolio/)
 
 A 15-key Stream Deck set up as the front panel for daily work. Repeat tasks across Excel, email, screen capture and AI tools are each one labeled button. The rule: everything has a button, and nothing depends on remembering a shortcut.
 
