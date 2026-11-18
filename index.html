@@ -67,6 +67,13 @@ tbody tr:last-child td{border-bottom:0}
 .risk{font:700 .72rem var(--f-m);padding:1px 7px;border-radius:999px;color:#fff}
 .risk.h{background:#b3261e}.risk.m{background:#b7791f}.risk.l{background:#2c6e45}
 footer{font-size:.85rem;color:var(--muted)}
+.about{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:760px){.about{grid-template-columns:minmax(0,1fr)}.about>div:not(.shots){order:-1}}
+.about figure{margin:0;min-width:0}
+.about img{display:block;width:100%;height:auto;border-radius:8px}
+.about figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+.about ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.about .shots{display:grid;gap:14px}
 </style></head><body>
 <div class="wrap">
 <header style="display:flex;flex-direction:column;gap:8px">
@@ -74,6 +81,27 @@ footer{font-size:.85rem;color:var(--muted)}
 <p>A 15-key Stream Deck turned into the front panel for my daily work. Every repeat task, from logging a quality result in Excel to filing an email or starting an AI prompt, is one labeled button. The goal: everything has a button, and nothing depends on remembering a shortcut.</p>
 <p class="muted">Portfolio version: layouts and labels are generic. Tap any key to see what it triggers.</p>
 </header>
+
+<section class="panel" aria-labelledby="whatH">
+<h2 id="whatH">What is a Stream Deck?</h2>
+<div class="about">
+<div class="shots">
+<figure><img src="img/stream-deck-photo.jpg" alt="Stream Deck with 15 red and black custom keys: five page keys on top, then app, folder and preset keys" width="1098" height="829" loading="lazy"><figcaption>My Stream Deck on page 1: page keys across the top, then apps, folders and presets.</figcaption></figure>
+<figure><img src="img/stream-deck-app.jpg" alt="Stream Deck desktop app showing page 2 of a PowerPoint profile with font, shape, crop and align buttons" width="907" height="803" loading="lazy"><figcaption>Setting up page 2 of the PowerPoint profile in the Stream Deck app: font size, shape, crop and align buttons.</figcaption></figure>
+</div>
+<div>
+<p style="margin-top:0">A Stream Deck is a USB keypad made by Elgato. The model shown has 15 keys, and every key is a small LCD screen, so each button shows exactly what it does.</p>
+<ul>
+<li><b>Built for streamers, useful for anyone:</b> a key can press a keyboard shortcut, open an app, file or website, run a macro, or run a chain of steps with one press.</li>
+<li><b>Pages and folders:</b> 15 keys go a long way. My top row switches between five pages, and folder keys open more buttons.</li>
+<li><b>Profiles per app:</b> each app can have its own layout. The PowerPoint profile turns the deck into formatting buttons for fonts, shapes, cropping and alignment.</li>
+<li><b>Custom icons:</b> I designed one consistent icon style and wrote a Python generator that built the full set of 160 icons.</li>
+<li><b>Why it matters at work:</b> repeat tasks stop depending on memory. A new teammate can read the keys instead of learning shortcuts.</li>
+</ul>
+<p class="hint" style="margin-bottom:0">The interactive deck below is a generic copy of my setup. Tap any key to see what it triggers.</p>
+</div>
+</div>
+</section>
 
 <section class="panel" aria-labelledby="dH">
 <div class="pages" id="pageBtns" role="group" aria-label="Page"></div>
